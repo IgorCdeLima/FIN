@@ -18,7 +18,7 @@ Aplicativo desktop para registrar entradas e saídas financeiras e acompanhar a 
 - [Modelo de dados](#modelo-de-dados)
 - [Ferramentas de massa de dados](#ferramentas-de-massa-de-dados)
 - [Status do projeto](#status-do-projeto)
-- [Melhorias futuras](#melhorias-futuras)
+- [Telas do aplicativo](#telas-do-aplicativo)
 - [Autor](#autor)
 
 ---
@@ -97,6 +97,7 @@ FIN/
 │       ├── gerador_csv.py       # Gera um CSV "sujo" com 5.001 transações fictícias (botão Adicionar)
 │       ├── cleaner_csv.py       # Limpa e padroniza esse CSV (botão Adicionar)
 │       └── inserir_csv.py       # Script antigo de carga em massa (legado, não usado pelo app)
+├── imagens/                     # Capturas de tela usadas neste README
 ├── file_csv/
 │   ├── dados_brutos.csv         # Exemplo de saída do gerador (formato sujo)
 │   └── dados.csv                # Exemplo de saída do tratamento
@@ -236,6 +237,16 @@ Os CSVs intermediários são gravados em `%LOCALAPPDATA%\FIN\file_csv\` e sobres
 **Versão 1.1.3: funcional e pausado.** O fluxo principal está completo e em uso: cadastro, login, lançamentos, categorias, dashboard e consulta mensal. O executável também foi gerado.
 
 O projeto começou com **PostgreSQL** (`postgresql.py`) e migrou para **SQLite** para virar um aplicativo autocontido, que não depende de servidor de banco.
+
+---
+
+## Telas do aplicativo
+
+**[1] Gráficos**:
+<img src='imagens/graficos.png'>
+
+**[2] Tabela**:
+<img src='imagens/tabela.png'>
 
 ---
 
