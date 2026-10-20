@@ -1,0 +1,195 @@
+body{
+    main{
+        margin: auto;
+        justify-content: center;
+        width: 90%;
+        padding: 20px;
+        
+        border-radius: 10px;
+        width: 90%;
+        min-width: 300px;
+        margin: auto;
+        
+        h1{
+            text-align: center;
+            width: 100%;
+            min-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            
+        }
+        .dados{
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .transiction{
+            border-radius: 10px;
+            padding: 10px;
+        }
+    }
+}
+.d_button{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    .button{
+        border-radius: 10px;
+    }
+    p{
+        margin: 0;
+    }
+}
+.dados{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .date{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 49%;
+        min-width: 250px;
+        height: 50px;
+        margin-top: 10px;
+        .date_l{
+            border: none;
+            input{
+                height: 50px;
+                width: 250px;
+                appearance: none;
+                border-radius: 10px;
+            }
+            input:hover{
+                cursor: pointer;
+            }
+        }
+        #transictions{
+            appearance: none;
+            height: 50px;
+            width: 250px;
+            border-radius: 10px;
+            option{
+                appearance: none;
+            }
+
+        }
+        #transictions:hover{
+            cursor: pointer;
+        }
+        
+        
+    }
+    .typevalue{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        min-width: 250px;
+        height: 50px;
+        margin-top: 10px;
+        label{
+            display: flex;
+            justify-content: left;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            gap:10px;
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .value{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        label{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: left;
+            align-items: center;
+            gap: 10px;
+            width: 100%;
+            min-width: 250px;
+            input{
+                height: 30px;
+            }
+            #value{
+                width: 230px;
+                border-radius: 10px;
+            }
+            #description{
+                overflow: hidden;
+                width: 230px;
+                border-radius: 10px;
+            }
+            p{
+                margin: 0;
+            }
+
+        }
+    }
+    .insert_button{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 250px;
+
+    }
+    .insert_button:hover{
+        cursor: pointer;
+    }
+    
+}
+.transiction{
+
+    .table{
+        width: 100%;
+        min-width: 250px;
+        gap: 10px;
+        label{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            width: 100%;
+            min-width: 200px;
+            gap:10px;
+            p{
+                width: 100px;
+                white-space: nowrap;
+            }
+            input{
+                width: 230px;
+                border-radius: 10px;
+            }
+        }
+        
+    }
+    
+    .d_button{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        .insert_button{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            width: 250px;
+        }
+        .insert_button:hover{
+            cursor: pointer;
+        }
+
+    }
+}

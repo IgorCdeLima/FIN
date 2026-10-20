@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/menu_principal.css">
+    <link rel="stylesheet" href="../css/menu_color.css">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.6.0/dist/echarts.min.js"></script>
+    
+    <title>FIN</title>
+</head>
+<body>
+
+    <main>
+        <div class="menu">
+            <button onclick="page_insert_data()">Inserir</button>
+            <button onclick="page_print_table()">Pesquisar</button>
+            <button onclick="insert_csv()">Adicionar</button>
+        </div>
+        <div class="page">
+
+            <div class="selector">
+                <button id="day">Dia</button>
+                <button id="month">Mês</button>
+                <button id="year">Ano</button>
+                
+                <select class="selecter" id="year_selector">
+                    <option value="">Ano⏷</option>
+                </select>
+                
+                <select class="selecter" id="month_selector">
+                    <option value="">Mês⏷</option>
+                </select>
+                
+                <button class="hoje" id="total">hoje</button>
+            </div>
+            <div class="card_value">
+                <div id="card_div">
+                    <h1 id="card"></h1>
+                </div>
+                <div id="card_pizza">
+                    <div id="pieChart"></div>
+                </div>
+            </div>
+             <div class="container">
+                    <div class="card">
+                        <div id="chart-mensal" class="chart"></div>
+                    </div>
+                </div>
+        </div>
+      
+    </main>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'tomorrow';
+    src: url(./font/Tomorrow-Light.ttf);
+    font-style: normal;
+}
+
+:root{
+
+    --sombra: #60c5ffe7;
+    --destaque: #bee5ff;
+    --fundo_body:#000008; 
+    --fundo_main:#00407433; 
+    --transparent: #00000034;
+    --buton:#33aef5;
+    --text:#ffffff;;
+}
+*{
+    font-family: 'tomorrow', sans-serif;
+    font-size: x-large;
+    text-shadow: 0px 0px 10px var(--sombra);
+    color: var(--text);
+    font-size: large;
+}
+
+body {
+    background-color: var(--fundo_body);
+
+    main {
+        background-color: var(--fundo_main);
+        .menu {
+            background-color: var(--transparent);
+            border: 1px solid var(--destaque);
+            box-shadow: inset 0px 0px 10px var(--sombra), 0px 0px 10px var(--sombra);
+            background-color: var(--fundo_main);
+
+            button {
+                color: var(--text);
+                
+                background-color: var(--transparent);
+                
+                box-shadow: inset 0px 0px 15px var(--sombra), 0px 0px 10px var(--sombra);
+                border: 1px solid var(--destaque);
+            }
+
+            button:hover {
+                background-color: var(--buton);
+            }
+        }
+
+        .page {
+            background-color: var(--transparent);
+            border: 1px solid var(--destaque);
+            box-shadow: inset 0px 0px 10px var(--sombra), 0px 0px 10px var(--sombra);
+            background-color: var(--fundo_main);
+
+            .selector {
+
+                button,
+                .selecter {
+                
+                    background-color: var(--transparent);
+                    
+                    box-shadow: inset 0px 0px 15px var(--sombra), 0px 0px 10px var(--sombra);
+                    border: 1px solid var(--destaque);
+                }
+
+                button:hover,
+                .selecter:hover {
+                    background-color: var(--buton);
+                }
+                .selecter:focus-visible {
+                    outline: none;
+                }
+            }
+            .card_value{
+                background-color: var(--transparent);
+                #card_div,#card_pizza{
+                    background-color: var(--fundo_main);
+                    box-shadow: inset 0px 0px 15px var(--sombra), 0px 0px 10px var(--sombra);
+                    border: 1px solid var(--destaque);
+                }
+                #card{
+                    text-shadow: 0px 0px 10px var(--sombra);
+                }
+            }
+            .container{
+                background-color: var(--fundo_main);
+                box-shadow: inset 0px 0px 15px var(--sombra), 0px 0px 10px var(--sombra);
+                border: 1px solid var(--destaque);
+
+            }
+            
+        }
+    }
+}

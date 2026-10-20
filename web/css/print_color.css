@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'tomorrow';
+    src: url(./font/Tomorrow-Light.ttf);
+    font-style: normal;
+}
+
+:root{
+
+    --sombra: #60c5ffe7;
+    --destaque: #bee5ff;
+    --fundo_body:#000008; 
+    --fundo_main:#00407428; 
+    --transparent: #00000034;
+    --buton:#33aef5c5;
+    --buton_table:#33aef56e;
+    --text:#ffffff;;
+}
+*{
+    font-family: 'tomorrow', sans-serif;
+    font-size: x-large;
+    text-shadow: 0px 0px 10px var(--sombra);
+    color: var(--text);
+}
+
+body{
+    background-color: var(--fundo_body);
+    button{
+        color: var(--text);
+        background-color: var(--transparent);
+        
+        box-shadow: inset 0px 0px 15px var(--sombra), 0px 0px 10px var(--sombra);
+        border: 1px solid var(--destaque);
+    }
+    main{
+        background-color: var(--fundo_main);
+        box-shadow: inset 0px 0px 15px var(--sombra), 0px 0px 10px var(--sombra);
+        border: 1px solid var(--destaque);
+        button{
+            color: var(--text);
+            background-color: var(--transparent);
+            
+            box-shadow: inset 0px 0px 15px var(--sombra), 0px 0px 10px var(--sombra);
+            border: 1px solid var(--destaque);
+        }
+        button:hover{
+            background-color: var(--buton);
+            cursor: pointer;
+        }
+        label{
+            input{
+                outline: none;
+                color: var(--text);
+                background: var(--fundo_main);
+                border: 1px solid var(--destaque); 
+                box-shadow: inset 0px 0px 30px var(--sombra), 0px 0px 10px var(--sombra);
+            }
+            input:hover{
+                cursor: pointer;
+            }
+        }
+        .table{
+            background-color: var(--fundo_main);
+            scrollbar-color: var(--buton) var(--fundo_main);
+            scrollbar-width: thin;
+            box-shadow: 0px 0px 10px var(--sombra);
+            table{
+                thead{
+                    background-color: var(--fundo_body);
+                    box-shadow: inset 0px 0px 10px var(--sombra);
+                }
+                td,th{
+                    border: 1px solid var(--sombra);
+                }
+                tbody tr:hover{
+                    background-color: var(--buton_table);
+                    cursor: default;
+                }
+            }
+        }
+        
+    }
+}

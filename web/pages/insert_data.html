@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/insert_color.css">
+    <link rel="stylesheet" href="../css/menu_insert.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="d_button">
+        <button class="button" onclick="back()">◁</button>
+        <p id="msg"></p>
+    </div>
+    <main>
+        <h1>
+            Insira uma transação
+        </h1>
+        <div class="dados">
+            <div class="table date">
+                <label class="date_l" for="date">
+                    <input id="date" type="date">
+                </label>
+            </div>
+            <div class="table date">
+                <select  id="transictions" >
+                    <option value="">Transações</option>
+                </select>
+            </div>
+            <div class="table typevalue">
+                <label  for="entry" >
+                    <input id = "entry" name="type" type="radio" value="entry">
+                    <p>
+                        Entrada
+                    </p>
+                        
+                </label>
+            </div>
+            <div class="table typevalue">
+                <label for="exit">
+                    <input id="exit" name="type" type="radio" value="exit">
+                    <p>
+                        Saída
+                    </p>
+                </label>
+            </div>
+
+            <div class="table value">
+
+                <label for="value">
+                    <p>
+                        Valor
+                    </p>
+    
+                    <input id="value" type="text" placeholder="R$ 0,00" maxlength="14" oninput="atualizar_valor(this.value)">
+                </label>
+            </div>
+        
+        
+            <div class="table value ">
+
+                <label for="description">
+                    <p>
+                        Descrição
+                    </p>
+                    <input  id="description" type="text">
+                </label>
+            </div>
+            <div class="d_button">
+
+                <button class="button insert_button" onclick="insert_data()">INSERIR</button>
+            </div>
+        
+        
+        </div>
+        <h1>
+            Cadastre uma Transação
+        </h1>
+        <div class="transiction">
+
+            <div class="table">
+                <label for="transition_name">
+                    <p>Nome</p>
+                    <input id="transiction_name" type="text">
+                </label>
+            </div>
+            <div class="d_button">
+                <button class="button insert_button" id="insert_t">INSERIR</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/transactions.js"></script>
+</body>
+</html>

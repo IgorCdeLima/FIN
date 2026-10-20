@@ -1,0 +1,148 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+body{
+
+    main{
+
+        margin: auto;
+        margin-top: 10px;
+        width:95%;
+        border-radius: 20px;
+
+        .menu{
+
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            gap: 10px;
+
+            border-radius: 10px;
+            height: 50px;
+            padding: 10px;
+            margin: auto;
+            margin-bottom: 10px;
+            button{
+                font-size: larger;
+                width: 150px;
+                height: 100%;
+                margin-bottom: 0px;
+                border-radius: 10px;
+            }
+            button:hover{
+                cursor: pointer;
+            }
+        }
+        .page{
+
+            border-radius: 20px;
+            padding: 10px;
+            .selector{
+                display: flex;
+                gap: 10px;
+                padding: 10px;
+                height: 30px;
+                width: auto;
+                button{
+                    padding: 3px;
+                    width: 70px;
+                    height: 100%;
+                    border-radius: 10px;
+                }
+                button:hover{
+                    cursor: pointer;
+                }
+                .hoje{
+                    margin-left: auto;
+                    width: 100px;
+                    font-size: larger;
+                }
+
+                .selecter{
+
+                    appearance: none;
+                    text-align: center;
+
+                    width: 70px;
+                    height: 100%;
+                    border-radius: 10px;
+                    option{
+                        appearance: none;
+                    }
+                }
+                .selecter:hover{
+                    cursor: pointer;
+                }
+            }
+            .card_value{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                gap: 10px;
+                border-radius: 10px;
+                
+                margin: auto;
+                height: auto;
+                padding: 10px;
+                #card_div{
+                    overflow: auto;
+                    border-radius: 10px;
+                    margin:  0 auto;
+
+                    min-width:48%;
+
+                    height: 100%;
+                    padding: 10px;
+                    #card{
+
+                        padding: 10px;
+                        font-size: 50px;
+                        text-align: left;
+                        
+                    }
+                }
+                    
+            }
+            #card_pizza{
+                    padding: 10px;
+                    min-width: 48%;
+                    min-height: 200px;
+                    height: auto;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    #pieChart{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            
+            }
+            .container{
+                width: auto;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                
+                .card {
+                    border-radius: 10px;
+                    padding: 10px;
+
+                    .chart {
+                        margin: auto;
+                        width: 100%;
+                        height: 350px;
+                    }
+
+                }
+            }
+        }
+    }

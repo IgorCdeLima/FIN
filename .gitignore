@@ -1,0 +1,25 @@
+# Ambiente virtual
+venv/
+.venv/
+.env
+.env.*
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos de build
+build/
+dist/
+*.egg-info/
+
+# SQLite
+*.sqlite
+*.db
+
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db

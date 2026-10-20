@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/print_table.css">
+    <link rel="stylesheet" href="../css/print_color.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="back">
+        <button class="button" id="back" onclick="back()">◁</button>
+        <p id="msg"></p>
+    </div>
+    <main>
+        <h1>
+            Tabela Mensal de gastos
+        </h1>
+        <div class="calendar">
+            <label for="table_name">
+                <input id="table_name" type="month">
+            </label>
+            <button class="button" onclick="print_table()">⌕</button>
+        </div>
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Transição</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                </tbody>
+            </table>
+        </div>
+
+    </main>
+    
+    <script src="../js/menu.js"></script>
+</body>
+</html>
