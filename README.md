@@ -237,46 +237,6 @@ Os CSVs intermediários são gravados em `%LOCALAPPDATA%\FIN\file_csv\` e sobres
 
 O projeto começou com **PostgreSQL** (`postgresql.py`) e migrou para **SQLite** para virar um aplicativo autocontido, que não depende de servidor de banco.
 
-### Histórico de versões
-
-**1.1.3: correções e robustez**
-
-- O cadastro de usuário não insere mais uma transação vazia (`"_"`) no banco. A categoria padrão passou a se chamar "Sem categoria".
-- Cadastrar um usuário que já existe é recusado **antes** de criar qualquer pasta ou arquivo, então não sobram bancos órfãos em `%LOCALAPPDATA%\FIN\data`.
-- O saldo (card) funciona com o banco vazio, sem erro.
-- O gráfico diário de um mês vazio mostra a quantidade real de dias do mês (28, 29, 30 ou 31).
-- As respostas de erro do dashboard devolvem dados válidos, em vez de uma referência de método.
-- A coluna de valor (`entry`/`exit`) é validada contra uma lista fixa antes de entrar no SQL.
-- Os valores são arredondados para 2 casas decimais na gravação.
-- O botão "Adicionar" foi reativado no dashboard. Agora ele gera, trata e insere uma massa nova de dados de teste a cada clique, com confirmação antes e recarga do dashboard ao final. Antes, gerador e limpador precisavam ser rodados à mão.
-- A carga em massa roda numa única transação e informa quantos lançamentos entraram.
-- Todas as conexões SQLite são fechadas ao final de cada operação.
-- A verificação de senha usa `hmac.compare_digest`.
-- A tabela mensal monta as células com `textContent` em vez de `innerHTML`. Um nome ou descrição com HTML (por exemplo, `<img onerror=...>`) é exibido como texto e não executa código com acesso à API do app. Descrições vazias aparecem em branco, e não mais como "null".
-- A versão do ECharts está fixada (`5.6.0`).
-- Removidas a referência a `css/dashboard.css` (arquivo inexistente), o uso de `document.log` no JS e o arquivo de rascunho `test.py`.
-- `main.spec` portável: ícone com caminho relativo, só `web/` embutido, executável `FIN.exe`.
-- `.gitignore` corrigido para ignorar o arquivo `.env` e bancos `*.db`.
-
----
-
-## Melhorias futuras
-
-**Robustez e qualidade**
-
-- Migrar os valores de `REAL` para centavos (`INTEGER`). Isso exige um script de migração para os bancos já existentes.
-- Servir o ECharts localmente (`web/js/vendor/`), para o dashboard funcionar offline.
-- Remover o código legado (`postgresql.py`, `inserir_csv.py`).
-- Padronizar a nomenclatura (`transiction` / `transition` → `transaction`). Também exige migração dos bancos existentes, porque muda nomes de tabelas e colunas.
-
-**Funcionalidades**
-
-- Editar e excluir lançamentos.
-- Importar CSV escolhendo o arquivo pela interface.
-- Exportar os dados (CSV/Excel) e fazer backup pelo próprio app.
-- Filtros e gráficos por categoria.
-- Criptografar o banco (por exemplo, com SQLCipher) usando uma chave derivada da senha.
-
 ---
 
 ## Autor
